@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <EditText
         android:id="@+id/nombreEditText"
         android:layout_width="0dp"
@@ -14,16 +15,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints="username"
         android:hint="@string/nombre_hint"
+        android:importantForAccessibility="yes"
         android:inputType="text"
         android:minHeight="48dp"
-        android:importantForAccessibility="yes"
-        android:autofillHints="username"
         app:layout_constraintBottom_toTopOf="@+id/confirmarButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 
     <TextView
         android:id="@+id/textView"
@@ -38,6 +39,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/nombreEditText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -53,6 +55,7 @@
         android:text="@string/boton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
